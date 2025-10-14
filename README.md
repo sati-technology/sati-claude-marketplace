@@ -104,20 +104,18 @@ This is a private marketplace for Sati Technology. Access requires:
 
 ## 🐳 Docker MCP Integration
 
-Sati uses **Docker MCP Toolkit** for managing MCP servers. This provides:
+Sati uses **Docker MCP Toolkit** for managing MCP servers.
 
-- **Single Configuration**: One `MCP_DOCKER` connection to all servers
-- **200+ Pre-built Servers**: GitHub, Browser, AWS/CDK, and more
-- **One-Click Installation**: Via Docker Desktop UI
-- **Built-in Security**: Containerized, resource-limited, isolated
+### Setup
 
-### Quick Setup
+1. **Open Docker Desktop**
+2. **Go to Settings → MCP**
+3. **Install desired MCP servers** (GitHub, Browser, AWS, etc.)
+4. **Authorize when prompted**
 
-1. **Install Docker MCP Toolkit** (included with Docker Desktop)
-2. **Enable MCP Servers** in Docker Desktop → Settings → MCP
-3. **Start Building Plugins** that leverage MCP tools
+That's it! Claude Code automatically connects to all installed MCP servers.
 
-See [Docker MCP Integration Guide](docs/DOCKER-MCP-GUIDE.md) for detailed documentation.
+See [Docker MCP Integration Guide](docs/DOCKER-MCP-GUIDE.md) and [official Docker MCP docs](https://docs.docker.com/ai/mcp-catalog-and-toolkit/toolkit/) for more details.
 
 ## 📚 Documentation
 
