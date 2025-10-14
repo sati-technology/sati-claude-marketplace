@@ -8,18 +8,18 @@ Agents in Claude Code plugins can access tools through frontmatter configuration
 
 ## Tool Naming Pattern
 
-### Docker MCP Tools (Sati Standard)
+### Docker MCP Tools
 
-**All MCP tools accessed through Docker MCP Toolkit use this pattern:**
+**All MCP tools use this pattern:**
 
 ```
 mcp__MCP_DOCKER__<tool_name>
 ```
 
 **Key Points**:
-- Use `MCP_DOCKER` as the namespace (not the individual server name)
-- Docker MCP Toolkit aggregates all servers under one namespace
+- Always use `MCP_DOCKER` as the namespace
 - Tool names are case-sensitive and must match exactly
+- Works for all servers installed via Docker Desktop
 
 **Examples**:
 - `mcp__MCP_DOCKER__get_pull_request` (from GitHub MCP Server)
@@ -28,8 +28,6 @@ mcp__MCP_DOCKER__<tool_name>
 - `mcp__MCP_DOCKER__browser_snapshot` (from Browser MCP Server)
 - `mcp__MCP_DOCKER__CDKGeneralGuidance` (from AWS CDK MCP Server)
 - `mcp__MCP_DOCKER__search_documentation` (from AWS Documentation MCP Server)
-
-**Note**: If you see references to tools like `mcp__awslabs_cdk-mcp-server__CDKGeneralGuidance`, that's the old pattern for project-specific `.mcp.json` files. Sati uses Docker MCP Toolkit, so **always use** `mcp__MCP_DOCKER__` prefix
 
 ### Core Claude Code Tools
 
