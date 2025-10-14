@@ -40,7 +40,9 @@ This agent uses only core tools, but production agents can access Docker MCP too
 - `mcp__MCP_DOCKER__browser_navigate` (Browser)
 - `mcp__MCP_DOCKER__CDKGeneralGuidance` (AWS CDK)
 
-See [Agent Guidelines](../../../docs/AGENT-GUIDELINES.md) for Docker MCP tool usage.
+**Important**: All Docker MCP tools use the `mcp__MCP_DOCKER__` prefix, not the individual server name. This is because Docker MCP Toolkit aggregates all servers under one namespace.
+
+See [Agent Guidelines](../../../docs/AGENT-GUIDELINES.md) for complete Docker MCP tool usage.
 
 ## Capabilities
 
