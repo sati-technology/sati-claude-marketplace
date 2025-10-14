@@ -1,0 +1,13 @@
+{
+  "name": "example-plugin",
+  "version": "1.0.0",
+  "description": "Example plugin demonstrating marketplace structure and best practices",
+  "author": {
+    "name": "Sati Technology",
+    "email": "[email protected]"
+  },
+  "homepage": "https://github.com/sati-technology/sati-claude-marketplace",
+  "repository": "https://github.com/sati-technology/sati-claude-marketplace",
+  "license": "MIT",
+  "keywords": ["example", "template", "starter"]
+}

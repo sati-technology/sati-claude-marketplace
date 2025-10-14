@@ -1,0 +1,27 @@
+{
+  "name": "sati-marketplace",
+  "owner": {
+    "name": "Sati Technology",
+    "email": "[email protected]",
+    "url": "https://github.com/sati-technology"
+  },
+  "metadata": {
+    "description": "Official Sati Technology Claude Code plugin marketplace",
+    "version": "1.0.0",
+    "homepage": "https://github.com/sati-technology/sati-claude-marketplace"
+  },
+  "plugins": [
+    {
+      "name": "example-plugin",
+      "source": "./plugins/example-plugin",
+      "description": "Example plugin demonstrating marketplace structure",
+      "version": "1.0.0",
+      "author": {
+        "name": "Sati Technology"
+      },
+      "category": "example",
+      "keywords": ["example", "template", "starter"],
+      "license": "MIT"
+    }
+  ]
+}
