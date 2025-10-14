@@ -26,9 +26,10 @@ your-plugin/
 │   └── agent-name.md
 ├── hooks/                    # Optional: Event handlers
 │   └── hooks.json
-├── .mcp.json                # Optional: MCP servers
 └── README.md                # Required: Documentation
 ```
+
+**Note on MCP Servers**: Sati uses Docker MCP Toolkit for managing MCP servers. Avoid including `.mcp.json` in plugins unless you have a truly custom MCP server. See [Docker MCP Integration Guide](docs/DOCKER-MCP-GUIDE.md).
 
 ## 📝 Creating a Plugin
 
@@ -119,6 +120,30 @@ Detailed description of the agent's expertise and when to use it.
     ]
   }
 }
+```
+
+**Using Docker MCP Tools** (Recommended):
+
+Instead of adding `.mcp.json`, leverage Docker MCP Toolkit:
+
+```markdown
+---
+name: deploy-check
+description: Check deployment status via GitHub Actions
+---
+
+# Deployment Check Command
+
+Uses GitHub MCP (via Docker MCP Toolkit) to check workflow status.
+
+## Prerequisites
+
+- Docker MCP Toolkit with GitHub MCP Server enabled
+- See [Docker MCP Guide](../../docs/DOCKER-MCP-GUIDE.md)
+
+## Usage
+
+/deploy-check [workflow-name]
 ```
 
 ### Step 4: Write Documentation

@@ -102,11 +102,30 @@ This is a private marketplace for Sati Technology. Access requires:
 - Sati GitHub organization membership
 - Configured Git authentication (SSH keys or tokens)
 
+## 🐳 Docker MCP Integration
+
+Sati uses **Docker MCP Toolkit** for managing MCP servers. This provides:
+
+- **Single Configuration**: One `MCP_DOCKER` connection to all servers
+- **200+ Pre-built Servers**: GitHub, Browser, AWS/CDK, and more
+- **One-Click Installation**: Via Docker Desktop UI
+- **Built-in Security**: Containerized, resource-limited, isolated
+
+### Quick Setup
+
+1. **Install Docker MCP Toolkit** (included with Docker Desktop)
+2. **Enable MCP Servers** in Docker Desktop → Settings → MCP
+3. **Start Building Plugins** that leverage MCP tools
+
+See [Docker MCP Integration Guide](docs/DOCKER-MCP-GUIDE.md) for detailed documentation.
+
 ## 📚 Documentation
 
+- **[Docker MCP Integration Guide](docs/DOCKER-MCP-GUIDE.md)** - Sati's MCP setup
 - [Claude Code Plugin Guide](https://docs.claude.com/en/docs/claude-code/plugins)
 - [Plugin Marketplaces](https://docs.claude.com/en/docs/claude-code/plugin-marketplaces)
 - [Plugin Reference](https://docs.claude.com/en/docs/claude-code/plugins-reference)
+- [Docker MCP Toolkit Docs](https://docs.docker.com/ai/mcp-catalog-and-toolkit/toolkit/)
 
 ## 🆘 Support
 

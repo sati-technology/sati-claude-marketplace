@@ -6,6 +6,25 @@ A template plugin demonstrating the structure and best practices for Sati Techno
 
 This plugin serves as a starting point for creating new plugins in the Sati marketplace. Copy and modify this structure to create your own custom extensions.
 
+**Key Features**:
+- Demonstrates plugin structure and metadata
+- Shows command and agent patterns
+- Follows Docker MCP Toolkit best practices
+- No unnecessary `.mcp.json` (uses Docker MCP instead)
+
+## Requirements
+
+### Docker MCP Toolkit (Recommended)
+
+This example demonstrates best practices for leveraging Docker MCP Toolkit. While this specific plugin doesn't require MCP tools, production plugins should use Docker MCP for:
+
+- **GitHub operations** - Via GitHub MCP Server
+- **Browser automation** - Via Browser MCP Server
+- **AWS/CDK guidance** - Via AWS CDK MCP Server
+- **And 200+ more servers** - Available through Docker Desktop
+
+See [Docker MCP Integration Guide](../../docs/DOCKER-MCP-GUIDE.md) for setup instructions.
+
 ## Installation
 
 ```bash
@@ -43,6 +62,8 @@ example-plugin/
 ├── agents/
 │   └── example-agent.md  # Example agent
 └── README.md             # This file
+
+Note: No .mcp.json file - Docker MCP Toolkit handles MCP servers!
 ```
 
 ## Creating Your Own Plugin
@@ -52,6 +73,22 @@ example-plugin/
 3. Add your commands in the commands/ directory
 4. Add your agents in the agents/ directory
 5. Update the README with your plugin's documentation
+6. Document Docker MCP server requirements (if any)
+7. Avoid adding `.mcp.json` unless you have a truly custom MCP server
+
+### When to Use Docker MCP vs Custom MCP
+
+**Use Docker MCP Toolkit (Recommended)**:
+- GitHub, GitLab, Bitbucket operations
+- Browser automation and testing
+- AWS, Azure, GCP cloud operations
+- Database connections (Postgres, MySQL, MongoDB)
+- Popular APIs (Stripe, Slack, Linear, etc.)
+
+**Only use custom `.mcp.json` if**:
+- Your plugin requires a proprietary internal MCP server
+- No Docker MCP server exists for your use case
+- You're developing a new MCP server for the community
 
 ## Contributing
 
