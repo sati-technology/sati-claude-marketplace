@@ -86,21 +86,43 @@ Detailed explanation of the command's functionality.
 
 **Add a Subagent** (`agents/your-agent.md`):
 
+See [Agent Development Guidelines](docs/AGENT-GUIDELINES.md) for comprehensive guidance.
+
 ```markdown
 ---
-description: What this agent specializes in
-capabilities: ["capability1", "capability2"]
+name: your-agent
+description: When to invoke this agent (with examples)
+tools: Read, Write, mcp__MCP_DOCKER__tool_name
+model: sonnet
+color: blue
 ---
 
 # Agent Name
 
 Detailed description of the agent's expertise and when to use it.
 
+## Available Tools
+
+List tools the agent can use, including Docker MCP tools.
+
 ## When to Use
 
 - Use case 1
 - Use case 2
+
+## Prerequisites
+
+If using Docker MCP tools, document required servers:
+- GitHub MCP Server (for repository operations)
+
+Install via: Docker Desktop → Settings → MCP
 ```
+
+**Important**: Agents with Docker MCP tools must:
+- List tools in frontmatter (e.g., `mcp__MCP_DOCKER__get_issue`)
+- Document MCP server prerequisites
+- Provide usage examples for MCP tools
+- Handle cases when tools are unavailable
 
 **Add Hooks** (`hooks/hooks.json`):
 

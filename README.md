@@ -121,11 +121,18 @@ See [Docker MCP Integration Guide](docs/DOCKER-MCP-GUIDE.md) for detailed docume
 
 ## 📚 Documentation
 
-- **[Docker MCP Integration Guide](docs/DOCKER-MCP-GUIDE.md)** - Sati's MCP setup
+### Sati Marketplace Guides
+- **[Docker MCP Integration Guide](docs/DOCKER-MCP-GUIDE.md)** - How we use Docker MCP Toolkit
+- **[Agent Development Guidelines](docs/AGENT-GUIDELINES.md)** - Creating agents with MCP tools
+
+### Claude Code Documentation
 - [Claude Code Plugin Guide](https://docs.claude.com/en/docs/claude-code/plugins)
 - [Plugin Marketplaces](https://docs.claude.com/en/docs/claude-code/plugin-marketplaces)
 - [Plugin Reference](https://docs.claude.com/en/docs/claude-code/plugins-reference)
+
+### External Resources
 - [Docker MCP Toolkit Docs](https://docs.docker.com/ai/mcp-catalog-and-toolkit/toolkit/)
+- [Model Context Protocol](https://modelcontextprotocol.io/)
 
 ## 🆘 Support
 
