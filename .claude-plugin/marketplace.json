@@ -22,6 +22,107 @@
       "category": "example",
       "keywords": ["example", "template", "starter"],
       "license": "MIT"
+    },
+    {
+      "name": "nextjs-mdx-website",
+      "source": "./plugins/nextjs-mdx-website",
+      "description": "Next.js 15 + TypeScript + MDX + Vercel website development toolkit with blog, static site generation, and deployment automation",
+      "version": "1.0.0",
+      "author": {
+        "name": "Sati Technology",
+        "email": "[email protected]"
+      },
+      "category": "web-development",
+      "keywords": [
+        "nextjs",
+        "typescript",
+        "mdx",
+        "blog",
+        "vercel",
+        "static-site",
+        "tailwindcss",
+        "pwa",
+        "react",
+        "framer-motion"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/sati-technology/sati-claude-marketplace",
+      "repository": "https://github.com/sati-technology/sati-claude-marketplace",
+      "agents": [
+        "mdx-content-agent",
+        "nextjs-page-agent",
+        "vercel-deployment-agent",
+        "component-styling-agent"
+      ],
+      "commands": [
+        "new-blog-post",
+        "new-page",
+        "deploy-vercel"
+      ],
+      "requirements": {
+        "node": ">=18.0.0",
+        "dependencies": [
+          "next",
+          "typescript",
+          "tailwindcss",
+          "framer-motion",
+          "next-mdx-remote"
+        ]
+      }
+    },
+    {
+      "name": "nextjs-dev-crew",
+      "source": "./plugins/nextjs-dev-crew",
+      "description": "Parallel agent crew for Next.js/TypeScript development with optimized orchestration across frontend, backend, testing, and deployment workflows. Achieve 40-50% faster development through specialized agents working simultaneously.",
+      "version": "1.0.0",
+      "author": {
+        "name": "Sati Technology",
+        "email": "[email protected]"
+      },
+      "category": "development-workflow",
+      "keywords": [
+        "nextjs",
+        "typescript",
+        "agent-crew",
+        "parallel-execution",
+        "orchestration",
+        "development-workflow",
+        "testing",
+        "deployment",
+        "code-review",
+        "automation",
+        "productivity"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/sati-technology/sati-claude-marketplace",
+      "repository": "https://github.com/sati-technology/sati-claude-marketplace",
+      "agents": [
+        "frontend-dev-agent",
+        "backend-dev-agent",
+        "database-agent",
+        "testing-agent",
+        "code-review-agent"
+      ],
+      "commands": [
+        "dev-full-feature",
+        "qa-full-check"
+      ],
+      "requirements": {
+        "node": ">=18.0.0",
+        "dependencies": [
+          "next",
+          "typescript",
+          "react",
+          "@prisma/client"
+        ]
+      },
+      "features": [
+        "Parallel agent execution (40-50% faster)",
+        "Specialized development agents (Frontend, Backend, Database)",
+        "Quality assurance crew (Testing, Code Review, Security)",
+        "TypeScript-driven coordination",
+        "Full-stack workflow automation"
+      ]
     }
   ]
 }

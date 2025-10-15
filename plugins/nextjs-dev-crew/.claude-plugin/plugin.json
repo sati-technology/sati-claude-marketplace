@@ -1,0 +1,52 @@
+{
+  "name": "nextjs-dev-crew",
+  "version": "1.0.0",
+  "description": "Parallel agent crew for Next.js/TypeScript development with optimized task orchestration across frontend, backend, testing, deployment, and documentation",
+  "author": {
+    "name": "Sati Technology",
+    "email": "[email protected]"
+  },
+  "keywords": [
+    "nextjs",
+    "typescript",
+    "agent-crew",
+    "parallel-execution",
+    "orchestration",
+    "development-workflow",
+    "testing",
+    "deployment",
+    "code-review"
+  ],
+  "category": "development-workflow",
+  "license": "MIT",
+  "repository": "https://github.com/sati-technology/sati-claude-marketplace",
+  "agents": [
+    "frontend-dev-agent",
+    "backend-dev-agent",
+    "database-agent",
+    "testing-agent",
+    "code-review-agent",
+    "security-agent",
+    "build-agent",
+    "deployment-agent",
+    "monitoring-agent",
+    "api-docs-agent",
+    "code-docs-agent"
+  ],
+  "commands": [
+    "dev-full-feature",
+    "dev-frontend-task",
+    "dev-backend-task",
+    "qa-full-check",
+    "deploy-full-pipeline",
+    "docs-full-suite"
+  ],
+  "requirements": {
+    "node": ">=18.0.0",
+    "dependencies": [
+      "next",
+      "typescript",
+      "react"
+    ]
+  }
+}

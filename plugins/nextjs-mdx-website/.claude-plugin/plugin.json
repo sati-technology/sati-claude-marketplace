@@ -1,0 +1,22 @@
+{
+  "name": "nextjs-mdx-website",
+  "version": "1.0.0",
+  "description": "Next.js 15 + TypeScript + MDX + Vercel website development toolkit with blog, static site generation, and deployment automation",
+  "author": {
+    "name": "Sati Technology",
+    "email": "[email protected]"
+  },
+  "homepage": "https://github.com/sati-technology/sati-claude-marketplace",
+  "repository": "https://github.com/sati-technology/sati-claude-marketplace",
+  "license": "MIT",
+  "keywords": [
+    "nextjs",
+    "typescript",
+    "mdx",
+    "blog",
+    "vercel",
+    "static-site",
+    "tailwindcss",
+    "pwa"
+  ]
+}
